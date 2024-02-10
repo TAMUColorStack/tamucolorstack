@@ -1,0 +1,401 @@
+/* Basic Resets */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* Header */
+header {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #c5050c;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+nav ul li.dropdown>a {
+  color: #c5050c;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #c5050c;
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover>a {
+  text-decoration: underline;
+}
+
+.join-btn {
+  background-color: #c5050c;
+  color: white;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.join-btn:hover {
+  background-color: #e57373;
+  color: white;
+}
+
+.intro {
+  text-align: center;
+  background-color: #c5050c;
+  color: white;
+  padding: 20px;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.image-container,
+.text-container {
+  flex: 1;
+  padding: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-container {
+  flex: 2;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+}
+
+.text-container h2 {
+  font-size: 2.5em;
+  color: #c5050c;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-container p {
+  font-size: 1.15em;
+  margin-bottom: 0.5em;
+}
+
+.btn-member {
+  display: inline-block;
+  background-color: #c5050c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: bold;
+}
+
+.btn-member:hover {
+  background-color: #e57373;
+  color: #ffffff;
+}
+
+.community-link {
+  color: #7289da;
+  text-decoration: none;
+}
+
+.community-link:hover {
+  color: #8a9fe9;
+}
+
+/* MailChimp Form */
+#mc_embed_signup {
+  background: #fff;
+  font: 14px Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+#mc_embed_signup h2 {
+  color: #c5050c;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#mc_embed_signup .mc-field-group {
+  margin: 0;
+}
+
+#mc_embed_signup .mc-field-group label {
+  text-align: left;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#mc_embed_signup .mc-field-group input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#mc_embed_signup .button {
+  background-color: #c5050c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+}
+
+#mc_embed_signup .button:hover {
+  background-color: #e57373;
+  cursor: pointer;
+}
+
+#mc_embed_signup .indicates-required {
+  text-align: left;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+#mc_embed_signup .mc-field-group input {
+  box-sizing: border-box;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+
+  #mc_embed_signup .mc-field-group,
+  #mc_embed_signup .mc-field-group label,
+  #mc_embed_signup .mc-field-group input {
+    display: block;
+  }
+
+  #mc_embed_signup .mc-field-group label {
+    margin-bottom: 5px;
+  }
+}
+
+.membership-form {
+  padding: 20px;
+  text-align: center;
+  display: block;
+}
+
+.membership-form h2 {
+  margin-bottom: 20px;
+  color: #c5050c;
+  font-size: 2em;
+}
+
+/* Footer */
+footer {
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-media {
+  padding-bottom: 10px;
+}
+
+.social-media a {
+  margin: 10px;
+  font-size: 40px;
+  color: black;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+#discord-icon {
+  color: #7289da;
+}
+
+#discord-icon:hover {
+  color: #8a9fe9;
+}
+
+#github-icon {
+  color: #333;
+}
+
+#github-icon:hover {
+  color: #6e5494;
+}
+
+#instagram-icon {
+  color: #e1306c;
+}
+
+#instagram-icon:hover {
+  color: #e76b8e;
+}
+
+#linkedin-icon {
+  color: #0077b5;
+}
+
+#linkedin-icon:hover {
+  color: #238bc0;
+}
+
+#linktree-icon {
+  color: rgb(119, 226, 113);
+}
+
+#linktree-icon:hover {
+  color: rgb(144, 238, 144);
+}
+
+footer p {
+  color: #333;
+}
+
+footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #6ea1f4;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .logo {
+    height: 40px;
+  }
+
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .dropdown-content {
+    position: static;
+    min-width: 100px;
+  }
+
+  .dropdown-content a {
+    padding: 10px;
+  }
+
+  .join-btn {
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  .dropdown-content a {
+    font-size: 10px;
+  }
+
+  /* Adjust text size for smaller screens */
+  .text-container h2 {
+    font-size: 2em;
+  }
+
+  .text-container p {
+    font-size: 1em;
+  }
+
+  /* Stack sections vertically on smaller screens */
+  section {
+    flex-direction: column;
+  }
+
+  /* Adjust image and text container layouts */
+  .image-container,
+  .text-container {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .events-calendar iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-bottom: 80px;
+  }
+}

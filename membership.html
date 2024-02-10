@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Join - ColorStack at UW-Madison</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://colorstack.cs.wisc.edu/membership.html" />
+    <meta property="og:title" content="Join ColorStack at UW-Madison" />
+    <meta property="og:description"
+        content="Become a part of our community at UW-Madison dedicated to Black and Latinx students in tech." />
+    <!-- TODO: add a meta tag with an image showcasing membership -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="assets/logo.png" alt="ColorStack Logo" class="logo" />
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Resources</a>
+                    <div class="dropdown-content">
+                        <a href="https://docs.google.com/document/d/1lKup_cQwaFkbBSjyYMsO3-Qg-CPLHNeP5Kl6L8nktrY/edit?usp=sharing"
+                            target="_blank">Resume Guide</a>
+                        <a href="https://docs.google.com/document/d/196MmywoRx5Y8oaBvjEB3a9STiend8ngUQpyJOh8cFNQ/edit?usp=sharing"
+                            target="_blank">Career Fair Guide</a>
+                    </div>
+                </li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="membership.html" class="join-btn">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="membership-form">
+        <h2>Step 1</h2>
+        <p>Fill out the form below to join ColorStack at UW-Madison.</p>
+
+        <iframe class="airtable-embed airtable-dynamic-height"
+            src="https://airtable.com/embed/appzuufK0aeGmOKan/shr3kJLLaTRB5lc14?backgroundColor=orange" frameborder="0"
+            onmousewheel="" width="80%" height="1380" style="background: transparent"></iframe>
+        <h2>Step 2</h2>
+        <p>
+            Join us on
+            <a href="https://win.wisc.edu/organization/colorstackatuw" target="_blank">Winsconsin Involvement
+                Network(WIN)</a>.
+        </p>
+    </section>
+
+    <div id="mc_embed_shell">
+        <div id="mc_embed_signup">
+            <form
+                action="https://wisc.us5.list-manage.com/subscribe/post?u=e314bec95c813fd20bc417091&amp;id=296f7ec2ff&amp;f_id=00d985e9f0"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate="">
+                <div id="mc_embed_signup_scroll">
+                    <h2>Newsletter</h2>
+
+                    <div class="mc-field-group">
+                        <label for="mce-EMAIL">Enter Wisc Email Address</label><input type="email" name="EMAIL"
+                            class="required email" id="mce-EMAIL" required="" value="" />
+                    </div>
+                    <div hidden="">
+                        <input type="hidden" name="tags" value="2199646" />
+                    </div>
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display: none"></div>
+                        <div class="response" id="mce-success-response" style="display: none"></div>
+                    </div>
+                    <div aria-hidden="true" style="position: absolute; left: -5000px">
+                        /* real people should not fill this in and expect good things - do
+                        not remove this or risk form bot signups */
+                        <input type="text" name="b_e314bec95c813fd20bc417091_296f7ec2ff" tabindex="-1" value="" />
+                    </div>
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
+                                value="Subscribe" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://discord.com/invite/ty688j9ezh" target="_blank" class="fab fa-discord"
+                id="discord-icon"></a>
+            <a href="https://instagram.com/colorstackatuw" target="_blank" class="fab fa-instagram"
+                id="instagram-icon"></a>
+            <a href="https://www.linkedin.com/company/colorstack-at-uw-madison" target="_blank" class="fab fa-linkedin"
+                id="linkedin-icon"></a>
+            <a href="https://github.com/colorstackatuw" target="_blank" class="fab fa-github" id="github-icon"></a>
+            <a href="https://linktr.ee/colorstackatuw" target="_blank" class="fas fa-link" id="linktree-icon"></a>
+        </div>
+        <p>
+            Email us at
+            <a href="mailto:colorstackatuw@cs.wisc.edu">colorstackatuw@cs.wisc.edu</a>
+        </p>
+        <p>
+            © <span id="current-year"></span> ColorStack at UW-Madison. All rights
+            reserved.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+    </script>
+</body>
+
+</html>

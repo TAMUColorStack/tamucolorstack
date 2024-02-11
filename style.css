@@ -55,14 +55,14 @@ nav ul li.dropdown>a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #780b0b;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: #c5050c;
+  color: #780b0b;
   padding: 12px;
   text-decoration: none;
   display: block;
@@ -82,7 +82,7 @@ nav ul li.dropdown>a {
 }
 
 .join-btn {
-  background-color: #c5050c;
+  background-color: #780b0b;
   color: white;
   padding: 8px 20px;
   text-decoration: none;
@@ -91,13 +91,13 @@ nav ul li.dropdown>a {
 }
 
 .join-btn:hover {
-  background-color: #e57373;
+  background-color: #780b0b;
   color: white;
 }
 
 .intro {
   text-align: center;
-  background-color: #c5050c;
+  background-color: #780b0b;
   color: white;
   padding: 20px;
   font-size: 1.25em;
@@ -136,7 +136,7 @@ section {
 
 .text-container h2 {
   font-size: 2.5em;
-  color: #c5050c;
+  color: #780b0b;
   font-weight: bold;
   text-align: center;
 }
@@ -158,7 +158,7 @@ section {
 }
 
 .btn-member:hover {
-  background-color: #e57373;
+  background-color: #780b0b;
   color: #ffffff;
 }
 
@@ -181,7 +181,7 @@ section {
 }
 
 #mc_embed_signup h2 {
-  color: #c5050c;
+  color: #780b0b;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -205,7 +205,7 @@ section {
 }
 
 #mc_embed_signup .button {
-  background-color: #c5050c;
+  background-color: #780b0b;
   color: white;
   border: none;
   border-radius: 5px;
@@ -216,7 +216,7 @@ section {
 }
 
 #mc_embed_signup .button:hover {
-  background-color: #e57373;
+  background-color: #780b0b;
   cursor: pointer;
 }
 
@@ -252,7 +252,7 @@ section {
 
 .membership-form h2 {
   margin-bottom: 20px;
-  color: #c5050c;
+  color: #780b0b;
   font-size: 2em;
 }
 

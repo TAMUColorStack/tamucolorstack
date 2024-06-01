@@ -1,15 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelector('.nav-links');
-
-    burger.addEventListener('click', () => {
-        navLinks.classList.toggle('nav-active');
-    });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.burger');
-    const navLinks = document.querySelector('.nav-links');
     const about = document.getElementById('about');
     const events = document.getElementById('events');
     const contact = document.getElementById('contact');

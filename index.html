@@ -4,8 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ColorStack at Texas A&M University</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #6200ea; /* Deep purple */
+            color: #fff;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffd600; /* Amber */
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background: #fff;
+            margin: 5px;
+        }
+
+        /* Header styles */
+        header {
+            background: linear-gradient(45deg, #6200ea, #ffd600); /* Purple to Amber gradient */
+            color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #6200ea;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #ffd600; /* Amber */
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Footer styles */
+        footer {
+            background: #6200ea;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Media queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background: #6200ea; /* Deep purple */
+                position: absolute;
+                top: 70px;
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 0;
+            }
+
+            .nav-links a {
+                padding: 1rem;
+                display: block;
+            }
+
+            .burger {
+                display: block;
+            }
+        }
+
+        .nav-active {
+            display: flex;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -49,6 +199,15 @@
         <p>&copy; 2024 ColorStack at Texas A&M University</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+            });
+        });
+    </script>
 </body>
 </html>
